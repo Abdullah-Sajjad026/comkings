@@ -89,12 +89,12 @@ section {
     align-items: center;
 
     .logo-img {
-        width: 6.5rem;
+        width: 6rem;
         margin-right: 2rem;
     }
 
     .logo-text {
-        font-size: 4rem;
+        font-size: 3.7rem;
         color: white;
     }
 }
@@ -125,6 +125,8 @@ section {
 
 // header
 .header {
+    padding: 2%;
+
     .navbar {
         font-size: 1.8rem;
         font-family: inherit;
@@ -133,6 +135,10 @@ section {
 
         .nav-item {
             align-self: center;
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
 
             .nav-link {
                 color: white;
@@ -152,11 +158,6 @@ section {
     }
 }
 
-.navbar-nav {
-    .nav-item:not(:last-child) {
-        margin-right: 3rem;
-    }
-}
 
 .hero {
     min-height: 98vh;
@@ -165,6 +166,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow-x: clip;
 
     @include respond(1400px) {
         min-height: 90vh;
@@ -267,8 +269,8 @@ section {
         }
 
         @include respond(900px) {
-            margin-top: 2rem;
             width: 80%;
+            margin: .5rem auto 0 auto;
         }
     }
 }
@@ -387,8 +389,8 @@ section {
             margin-right: 2rem;
         }
 
-        i {
-            font-size: 2.5rem;
+        img {
+            width: 2.6rem;
         }
     }
 }
@@ -545,7 +547,22 @@ section {
             flex-direction: row;
             list-style: none;
 
+            @include respond(740px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+
             li {
+                &:not(:last-child) {
+                    margin-right: 3rem;
+
+                    @include respond(740px) {
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                    }
+                }
+
                 a {
                     color: white;
                     text-decoration: none;
