@@ -160,7 +160,7 @@ section {
 
 
 .hero {
-    min-height: 98vh;
+    min-height: 90vh;
     background-image: url(../images/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -168,11 +168,10 @@ section {
     position: relative;
     overflow-x: clip;
 
-    @include respond(1400px) {
-        min-height: 90vh;
-    }
 
     &-content {
+        position: relative;
+
         @include respond(950px) {
             display: grid;
             padding-bottom: 7rem;
@@ -180,19 +179,14 @@ section {
     }
 
     &-text-col {
-        position: absolute;
-        top: 60%;
-        transform: translateY(-60%);
+
         max-width: 550px;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 5rem 0;
+        padding: 7rem 0 4rem 0;
 
         @include respond(950px) {
-            position: relative;
-            top: 0;
-            transform: translateY(0);
             padding: 8rem 0;
         }
 
@@ -255,10 +249,10 @@ section {
     }
 
     .hero-img {
-        width: 50%;
+        width: 60%;
         position: absolute;
-        top: 20%;
-        right: -10%;
+        top: 0;
+        right: -26%;
 
         @include respond(950px) {
             position: relative;

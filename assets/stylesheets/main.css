@@ -155,7 +155,7 @@ section {
   }
 }
 .hero {
-  min-height: 98vh;
+  min-height: 90vh;
   background-image: url(../images/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -164,11 +164,10 @@ section {
   overflow-x: clip;
 }
 
-@media only screen and (max-width: 1400px) {
-  .hero {
-    min-height: 90vh;
-  }
+.hero-content {
+  position: relative;
 }
+
 @media only screen and (max-width: 950px) {
   .hero-content {
     display: grid;
@@ -176,21 +175,15 @@ section {
   }
 }
 .hero-text-col {
-  position: absolute;
-  top: 60%;
-  transform: translateY(-60%);
   max-width: 550px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 5rem 0;
+  padding: 7rem 0 4rem 0;
 }
 
 @media only screen and (max-width: 950px) {
   .hero-text-col {
-    position: relative;
-    top: 0;
-    transform: translateY(0);
     padding: 8rem 0;
   }
 }
@@ -252,10 +245,10 @@ section {
 }
 
 .hero .hero-img {
-  width: 50%;
+  width: 60%;
   position: absolute;
-  top: 20%;
-  right: -10%;
+  top: 0;
+  right: -26%;
 }
 
 @media only screen and (max-width: 950px) {
@@ -567,11 +560,6 @@ section {
   opacity: 60%;
 }
 
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
