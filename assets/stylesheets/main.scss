@@ -44,6 +44,11 @@ body {
     color: white;
 }
 
+p {
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
 p.huge {
     font-size: 2rem;
 }
@@ -136,9 +141,10 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow-x: hidden;
 
     @include respond(1400px) {
-        min-height: 75vh;
+        min-height: 90vh;
     }
 
     &-content {
@@ -184,6 +190,14 @@ section {
                     height: 2px;
                     margin-right: 1.5rem;
                     background-color: white;
+
+                    @include respond(450px) {
+                        width: 20%;
+                    }
+
+                    @include respond(400px) {
+                        width: 10%;
+                    }
                 }
             }
 
@@ -191,6 +205,11 @@ section {
                 letter-spacing: 7px;
                 font-weight: 300;
                 font-size: 2.8rem;
+
+                @include respond(450px) {
+                    font-size: 2.4rem;
+                    ;
+                }
             }
         }
 
@@ -212,7 +231,7 @@ section {
     .hero-img {
         width: 50%;
         position: absolute;
-        top: 15%;
+        top: 20%;
         right: -10%;
 
         @include respond(950px) {
@@ -418,7 +437,63 @@ section {
     }
 }
 
-.section-roadmap {}
+.section-roadmap {
+    background-image: url(../images/roadmap-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.6rem;
+
+    .mycontainer {
+        width: 70%;
+        margin: 0 auto;
+
+        @include respond(500px) {
+            width: 90%;
+        }
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .roadmap {
+        &-card {
+            position: relative;
+            display: flex;
+
+            .icon-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-right: 4rem;
+
+                .vertical {
+                    flex: 1;
+                    width: 2px;
+                    background-color: white;
+                }
+
+                img {
+                    width: 30rem;
+                    height: auto;
+                }
+            }
+
+            h3 {
+                font-size: 2.8rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                opacity: 60%;
+            }
+
+        }
+    }
+}
 
 .footer {
     background-image: url(../images/footer-bg.png);
