@@ -41,6 +41,7 @@ body {
     line-height: 1.5;
     background-color: #000000;
     overflow-x: hidden;
+    color: white;
 }
 
 p.huge {
@@ -49,6 +50,11 @@ p.huge {
 
 image {
     max-width: 100%;
+    width: 100%;
+}
+
+section {
+    padding: 8rem 0;
 }
 
 .mycontainer {
@@ -77,8 +83,18 @@ image {
     }
 }
 
+.section-title-box {
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+
+    h2 {
+        font-size: 3.2rem;
+    }
+}
+
 // header
-header {
+.header {
     .navbar {
         font-size: 1.8rem;
         font-family: inherit;
@@ -100,16 +116,14 @@ header {
     }
 }
 
-
-
-
 .hero {
     min-height: 98vh;
-    background-image: url(../images/hero-bg.png);
+    background-image: url(../images/hero-bg.jpg);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 
 
     // &-content {
@@ -126,8 +140,6 @@ header {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-
-        color: white;
 
         .hero {
             &-title {
@@ -173,14 +185,74 @@ header {
         }
     }
 
-    &-img-col {}
-
-    position: relative;
-
     .hero-img {
         width: 60%;
         position: absolute;
-        top: 0%;
+        top: 3%;
         right: -10%;
+    }
+}
+
+.cards-section {
+    background-image: url(../images/cards-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .cards-content {
+        margin-top: 10rem;
+    }
+
+    .mycard {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 3rem;
+
+        .card {
+            &-img-col {
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            &-text-col {
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2rem;
+
+                .icon-box {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    span {
+                        font-size: 2.2rem;
+                        margin-left: 1.5rem;
+                    }
+                }
+
+                h4 {
+                    font-weight: 300;
+                    font-size: 2.8rem;
+                    letter-spacing: 1.5px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    display: grid;
+                    gap: .7rem;
+
+                    li {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
     }
 }

@@ -35,6 +35,7 @@ body {
   line-height: 1.5;
   background-color: #000000;
   overflow-x: hidden;
+  color: white;
 }
 
 p.huge {
@@ -43,6 +44,11 @@ p.huge {
 
 image {
   max-width: 100%;
+  width: 100%;
+}
+
+section {
+  padding: 8rem 0;
 }
 
 .mycontainer {
@@ -72,33 +78,42 @@ image {
   color: white;
 }
 
-header .navbar {
+.section-title-box {
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.section-title-box h2 {
+  font-size: 3.2rem;
+}
+
+.header .navbar {
   font-size: 1.8rem;
   font-family: inherit;
   padding: 4rem 0;
 }
 
-header .navbar .nav-item {
+.header .navbar .nav-item {
   align-self: center;
 }
 
-header .navbar .nav-item .nav-link {
+.header .navbar .nav-item .nav-link {
   color: white;
   text-decoration: none;
 }
 
 @media only screen and (max-width: 991px) {
-  header .navbar .nav-item {
+  .header .navbar .nav-item {
     align-self: stretch;
   }
 }
 .hero {
   min-height: 98vh;
-  background-image: url(../images/hero-bg.png);
+  background-image: url(../images/hero-bg.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   position: relative;
 }
 
@@ -110,7 +125,6 @@ header .navbar .nav-item .nav-link {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: white;
 }
 
 .hero-text-col .hero-title {
@@ -157,10 +171,70 @@ header .navbar .nav-item .nav-link {
 .hero .hero-img {
   width: 60%;
   position: absolute;
-  top: 0%;
+  top: 3%;
   right: -10%;
 }
 
+.cards-section {
+  background-image: url(../images/cards-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards-section .cards-content {
+  margin-top: 10rem;
+}
+
+.cards-section .mycard {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+}
+
+.cards-section .mycard .card-img-col img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards-section .mycard .card-text-col {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.cards-section .mycard .card-text-col .icon-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cards-section .mycard .card-text-col .icon-box span {
+  font-size: 2.2rem;
+  margin-left: 1.5rem;
+}
+
+.cards-section .mycard .card-text-col h4 {
+  font-weight: 300;
+  font-size: 2.8rem;
+  letter-spacing: 1.5px;
+}
+
+.cards-section .mycard .card-text-col ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.cards-section .mycard .card-text-col ul li {
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 
