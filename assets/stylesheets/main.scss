@@ -90,7 +90,7 @@ section {
 
     .logo-img {
         width: 6rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     .logo-text {
@@ -371,6 +371,11 @@ section {
 
     &>section {
         padding: 6rem 0;
+
+        @include respond(768px) {
+            padding: 0;
+        }
+
     }
 }
 
@@ -396,6 +401,10 @@ section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
+
+        @include respond(768px) {
+            padding: 6rem 0;
+        }
 
         @include respond(700px) {
             grid-template-columns: 1fr;

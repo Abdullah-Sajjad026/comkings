@@ -89,7 +89,7 @@ section {
 
 .logo-box .logo-img {
   width: 6rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .logo-box .logo-text {
@@ -368,6 +368,11 @@ section {
   padding: 6rem 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .section-combo-uh > section {
+    padding: 0;
+  }
+}
 .social-accounts a {
   text-decoration: none;
   color: white;
@@ -388,6 +393,11 @@ section {
   gap: 3rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .section-upgrades .upgrades-content {
+    padding: 6rem 0;
+  }
+}
 @media only screen and (max-width: 700px) {
   .section-upgrades .upgrades-content {
     grid-template-columns: 1fr;
@@ -560,6 +570,10 @@ section {
   opacity: 60%;
 }
 
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
