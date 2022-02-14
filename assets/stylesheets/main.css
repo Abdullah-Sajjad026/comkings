@@ -420,7 +420,7 @@ section {
 }
 
 .section-founders .founders-content {
-  padding: 8rem 0;
+  padding-top: 8rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
@@ -567,6 +567,7 @@ section {
   opacity: 60%;
 }
 
+/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
