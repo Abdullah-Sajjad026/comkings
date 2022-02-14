@@ -59,6 +59,14 @@ img {
 
 section {
     padding: 8rem 0;
+
+    @include respond(768px) {
+        padding: 7rem 0;
+    }
+
+    @include respond(550px) {
+        padding: 6rem 0;
+    }
 }
 
 .mycontainer {
@@ -81,12 +89,12 @@ section {
     align-items: center;
 
     .logo-img {
-        width: 7rem;
+        width: 6.5rem;
         margin-right: 2rem;
     }
 
     .logo-text {
-        font-size: 4.2rem;
+        font-size: 4rem;
         color: white;
     }
 }
@@ -108,6 +116,11 @@ section {
         text-transform: capitalize;
 
     }
+}
+
+.blurry-text {
+    text-shadow: 0 0 5px rgb(255 255 255 / 88%);
+    color: #ffffff00;
 }
 
 // header
@@ -139,6 +152,12 @@ section {
     }
 }
 
+.navbar-nav {
+    .nav-item:not(:last-child) {
+        margin-right: 3rem;
+    }
+}
+
 .hero {
     min-height: 98vh;
     background-image: url(../images/hero-bg.jpg);
@@ -160,8 +179,8 @@ section {
 
     &-text-col {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 60%;
+        transform: translateY(-60%);
         max-width: 550px;
         display: flex;
         flex-direction: column;
@@ -183,6 +202,7 @@ section {
             &-desc {
                 font-size: 1.8rem;
                 padding: .5rem 0;
+                opacity: 60%;
             }
 
             &-datebox {
@@ -334,6 +354,11 @@ section {
                     li {
                         font-size: 1.6rem;
                         opacity: 60%;
+                        display: flex;
+
+                        span:not(:last-child) {
+                            margin-right: 1rem;
+                        }
                     }
                 }
             }
@@ -538,5 +563,6 @@ section {
 
     .copyright {
         font-size: 1.4rem;
+        opacity: 60%;
     }
 }
