@@ -119,6 +119,7 @@ header .navbar .nav-item .nav-link {
 
 .hero-text-col .hero-desc {
   font-size: 1.8rem;
+  padding: 0.5rem 0;
 }
 
 .hero-text-col .hero-datebox {
@@ -145,6 +146,12 @@ header .navbar .nav-item .nav-link {
   align-self: flex-start;
   font-size: 1.8rem;
   border-radius: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.hero-text-col .btn:hover {
+  background-image: linear-gradient(to left, #ECDF93, #958A5E);
 }
 
 .hero .hero-img {
@@ -154,6 +161,7 @@ header .navbar .nav-item .nav-link {
   right: -10%;
 }
 
+/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
