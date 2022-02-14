@@ -64,6 +64,10 @@ section {
     @include respond(1400px) {
         max-width: 1140px;
     }
+
+    @include respond(1200px) {
+        padding: 0 4%;
+    }
 }
 
 .logo-box {
@@ -128,18 +132,21 @@ section {
 .hero {
     min-height: 98vh;
     background-image: url(../images/hero-bg.jpg);
-    background-position: top left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
+    @include respond(1400px) {
+        min-height: 75vh;
+    }
 
-
-    // &-content {
-    //     display: grid;
-    //     grid-template-columns: 1fr 2fr;
-    //     height: 100%;
-    // }
+    &-content {
+        @include respond(950px) {
+            display: grid;
+            padding-bottom: 7rem;
+        }
+    }
 
     &-text-col {
         position: absolute;
@@ -149,6 +156,14 @@ section {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        padding: 5rem 0;
+
+        @include respond(950px) {
+            position: relative;
+            top: 0;
+            transform: translateY(0);
+            padding: 8rem 0;
+        }
 
         .hero {
             &-title {
@@ -197,8 +212,21 @@ section {
     .hero-img {
         width: 50%;
         position: absolute;
-        top: 13%;
+        top: 15%;
         right: -10%;
+
+        @include respond(950px) {
+            position: relative;
+            top: 0;
+            right: 0;
+            justify-self: end;
+            margin-top: -5rem;
+        }
+
+        @include respond(900px) {
+            margin-top: 2rem;
+            width: 80%;
+        }
     }
 }
 
@@ -214,12 +242,26 @@ section {
     }
 
     .mycard {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        margin: 5rem 0;
+        display: flex;
         gap: 3rem;
+
+        @include respond(900px) {
+            margin: 7rem 0;
+        }
+
+        @include respond(700px) {
+            flex-direction: column;
+        }
 
         .card {
             &-img-col {
+                flex: 1;
+
+                @include respond(700px) {
+                    order: 0;
+                }
+
                 img {
                     width: 100%;
                     margin: 0 auto;
@@ -227,6 +269,9 @@ section {
             }
 
             &-text-col {
+
+
+                flex: 1;
                 align-self: center;
                 justify-self: center;
 
@@ -234,6 +279,11 @@ section {
                 flex-direction: column;
                 justify-content: flex-start;
                 gap: 2rem;
+
+                @include respond(700px) {
+                    order: 1;
+                    align-self: flex-start;
+                }
 
                 .icon-box {
                     display: flex;
@@ -270,21 +320,41 @@ section {
 
 .section-combo-uh {
     background-image: url(../images/founders-bg.jpg);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
 
     &>section {
-        padding: 5rem 0;
+        padding: 6rem 0;
+    }
+}
+
+.social-accounts {
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        i {
+            font-size: 2.5rem;
+        }
     }
 }
 
 .section-upgrades {
 
     .upgrades-content {
-        margin: 13rem 0;
+        padding: 10rem 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
+
+        @include respond(700px) {
+            grid-template-columns: 1fr;
+        }
 
         .upgrade-box {
             align-self: center;
@@ -295,7 +365,7 @@ section {
 
             h5 {
                 max-width: 50rem;
-                font-size: 2.5rem;
+                font-size: 2.3rem;
                 font-weight: 300;
                 letter-spacing: 2px;
             }
@@ -304,5 +374,84 @@ section {
                 width: 100%;
             }
         }
+    }
+}
+
+.section-founders {
+
+    .founders-content {
+        padding: 8rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+
+        @include respond(700px) {
+            grid-template-columns: 1fr;
+        }
+
+        .founder-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .founder-img {
+                margin-bottom: 3rem;
+            }
+
+            h6 {
+                font-size: 2.3rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+
+
+        }
+    }
+}
+
+.section-roadmap {}
+
+.footer {
+    background-image: url(../images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 0;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .footer-nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+            li {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 1.4rem;
     }
 }
