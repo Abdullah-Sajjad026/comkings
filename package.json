@@ -1,0 +1,16 @@
+{
+  "name": "comkings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile-sass": "dart-sass ./assets/stylesheets/:./assets/stylesheets/",
+    "watch-sass": "dart-sass --watch ./assets/stylesheets/:./assets/stylesheets/"
+  },
+  "author": "",
+  "license": "ISC"
+}

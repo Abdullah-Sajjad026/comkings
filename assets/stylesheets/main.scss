@@ -1,0 +1,179 @@
+// Query manager
+@mixin respond($media) {
+    @media only screen and (max-width: $media) {
+        @content;
+    }
+}
+
+// Variables
+:root {
+    --font-primary: 'Space Grotesk', sans-serif;
+}
+
+// Globals
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+
+    @include respond(991px) {
+        font-size: 9.5px;
+    }
+
+    @include respond(768px) {
+        font-size: 9px;
+    }
+
+    @include respond(600px) {
+        font-size: 8px;
+    }
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+p.huge {
+    font-size: 2rem;
+}
+
+image {
+    max-width: 100%;
+}
+
+.mycontainer {
+    max-width: 1320px;
+    margin: 0 auto;
+    width: 100%;
+
+    @include respond(1400px) {
+        max-width: 1140px;
+    }
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo-img {
+        width: 7rem;
+        margin-right: 2rem;
+    }
+
+    .logo-text {
+        font-size: 4.2rem;
+        color: white;
+    }
+}
+
+// header
+header {
+    .navbar {
+        font-size: 1.8rem;
+        font-family: inherit;
+        padding: 4rem 0;
+
+
+        .nav-item {
+            align-self: center;
+
+            .nav-link {
+                color: white;
+                text-decoration: none;
+            }
+
+            @include respond(991px) {
+                align-self: stretch;
+            }
+        }
+    }
+}
+
+
+
+
+.hero {
+    min-height: 98vh;
+    background-image: url(../images/hero-bg.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    // &-content {
+    //     display: grid;
+    //     grid-template-columns: 1fr 2fr;
+    //     height: 100%;
+    // }
+
+    &-text-col {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        color: white;
+
+        .hero {
+            &-title {
+                font-size: 4.2rem;
+            }
+
+            &-desc {
+                font-size: 1.8rem;
+            }
+
+            &-datebox {
+                display: flex;
+                align-items: center;
+
+                hr {
+                    width: 30%;
+                    height: 2px;
+                    margin-right: 1.5rem;
+                    background-color: white;
+                }
+            }
+
+            &-date {
+                letter-spacing: 7px;
+                font-weight: 300;
+                font-size: 2.8rem;
+            }
+        }
+
+        .btn {
+            padding: 1.7rem 3.7rem;
+            background-image: linear-gradient(to right, #ECDF93, #958A5E);
+            align-self: flex-start;
+            font-size: 1.8rem;
+            border-radius: 1rem;
+        }
+    }
+
+    &-img-col {}
+
+    position: relative;
+
+    .hero-img {
+        width: 60%;
+        position: absolute;
+        top: 0%;
+        right: -10%;
+    }
+}
