@@ -42,9 +42,8 @@ p.huge {
   font-size: 2rem;
 }
 
-image {
+img {
   max-width: 100%;
-  width: 100%;
 }
 
 section {
@@ -88,6 +87,14 @@ section {
   font-size: 3.2rem;
 }
 
+.section-title-box p {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+
 .header .navbar {
   font-size: 1.8rem;
   font-family: inherit;
@@ -101,6 +108,7 @@ section {
 .header .navbar .nav-item .nav-link {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 991px) {
@@ -169,9 +177,9 @@ section {
 }
 
 .hero .hero-img {
-  width: 60%;
+  width: 50%;
   position: absolute;
-  top: 3%;
+  top: 13%;
   right: -10%;
 }
 
@@ -188,7 +196,7 @@ section {
 
 .cards-section .mycard {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
 
@@ -199,6 +207,7 @@ section {
 
 .cards-section .mycard .card-text-col {
   align-self: center;
+  justify-self: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -233,8 +242,42 @@ section {
   font-size: 1.6rem;
 }
 
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
+.section-combo-uh {
+  background-image: url(../images/founders-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-combo-uh > section {
+  padding: 5rem 0;
+}
+
+.section-upgrades .upgrades-content {
+  margin: 13rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.section-upgrades .upgrades-content .upgrade-box {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-upgrades .upgrades-content .upgrade-box h5 {
+  max-width: 50rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.section-upgrades .upgrades-content .upgrade-box img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 

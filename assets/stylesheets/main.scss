@@ -48,9 +48,8 @@ p.huge {
     font-size: 2rem;
 }
 
-image {
+img {
     max-width: 100%;
-    width: 100%;
 }
 
 section {
@@ -91,6 +90,15 @@ section {
     h2 {
         font-size: 3.2rem;
     }
+
+    p {
+        margin-top: 2rem;
+        font-weight: 300;
+        font-size: 2.2rem;
+        letter-spacing: 4px;
+        text-transform: capitalize;
+
+    }
 }
 
 // header
@@ -107,6 +115,7 @@ section {
             .nav-link {
                 color: white;
                 text-decoration: none;
+                cursor: pointer;
             }
 
             @include respond(991px) {
@@ -186,9 +195,9 @@ section {
     }
 
     .hero-img {
-        width: 60%;
+        width: 50%;
         position: absolute;
-        top: 3%;
+        top: 13%;
         right: -10%;
     }
 }
@@ -206,7 +215,7 @@ section {
 
     .mycard {
         display: grid;
-        grid-template-columns: 1.3fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 3rem;
 
         .card {
@@ -219,6 +228,8 @@ section {
 
             &-text-col {
                 align-self: center;
+                justify-self: center;
+
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -254,5 +265,44 @@ section {
             }
         }
 
+    }
+}
+
+.section-combo-uh {
+    background-image: url(../images/founders-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &>section {
+        padding: 5rem 0;
+    }
+}
+
+.section-upgrades {
+
+    .upgrades-content {
+        margin: 13rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+        .upgrade-box {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            h5 {
+                max-width: 50rem;
+                font-size: 2.5rem;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
