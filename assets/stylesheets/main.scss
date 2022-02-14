@@ -125,6 +125,11 @@ section {
                 color: white;
                 text-decoration: none;
                 cursor: pointer;
+                transition: all .25s;
+
+                &:hover {
+                    color: rgba(255, 255, 255, .55);
+                }
             }
 
             @include respond(991px) {
@@ -141,7 +146,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    overflow-x: hidden;
 
     @include respond(1400px) {
         min-height: 90vh;
@@ -521,6 +525,11 @@ section {
                     text-decoration: none;
                     cursor: pointer;
                     font-size: 1.8rem;
+                    transition: all .25s;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, .55);
+                    }
                 }
             }
         }

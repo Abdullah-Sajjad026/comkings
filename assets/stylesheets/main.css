@@ -119,6 +119,11 @@ section {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.25s;
+}
+
+.header .navbar .nav-item .nav-link:hover {
+  color: rgba(255, 255, 255, 0.55);
 }
 
 @media only screen and (max-width: 991px) {
@@ -133,7 +138,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -503,15 +507,17 @@ section {
   text-decoration: none;
   cursor: pointer;
   font-size: 1.8rem;
+  transition: all 0.25s;
+}
+
+.footer .footer-nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .footer .copyright {
   font-size: 1.4rem;
 }
 
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
