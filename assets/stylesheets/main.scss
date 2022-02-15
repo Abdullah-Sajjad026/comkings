@@ -50,6 +50,10 @@ p {
     overflow-wrap: break-word;
 }
 
+a {
+    color: currentColor;
+}
+
 p.huge {
     font-size: 2rem;
 }
@@ -139,70 +143,76 @@ section {
     .navbar {
         font-size: 1.8rem;
         font-family: inherit;
-        padding: 4rem 0;
 
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-        .nav-item {
-            align-self: center;
+            .logo-box {}
 
-            &:not(:last-child) {
-                margin-right: 3rem;
-            }
+            .navbar-nav {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                transition: all .3s ease-in-out;
 
-            .nav-link {
-                color: white;
-                text-decoration: none;
-                cursor: pointer;
-                transition: all .25s;
+                &.show {
+                    left: 0;
+                }
 
                 @include respond(992px) {
-                    font-size: 2rem;
+                    flex-direction: column;
+                    position: fixed;
+                    top: 10%;
+                    left: -40%;
+                    width: 40%;
+                    height: max-content;
+                    background-color: #5b5549;
+                    border-top-right-radius: 3rem;
+                    border-bottom-right-radius: 3rem;
+                    z-index: 2;
                 }
 
-                &:hover {
-                    color: rgba(255, 255, 255, .55);
+                .nav-item {
+                    margin: 0 1rem;
+
+                    @include respond(992px) {
+                        margin: 2rem 0;
+                    }
+
+
+                    .nav-link {
+                        text-decoration: none;
+                        color: white;
+                        transition: all .25s;
+
+                        &:hover {
+                            color: rgba(255, 255, 255, .55);
+                        }
+                    }
                 }
             }
 
-            @include respond(991px) {
-                align-self: stretch;
-            }
+            .nav-toggle {
+                display: none;
 
-        }
-
-        .navbar-toggler {
-            font-size: 1.7rem;
-        }
-
-        .offcanvas {
-            @include respond(992px) {
-                padding: 3rem 2rem;
-                background-color: var(--bs-dark);
-            }
-
-            .offcanvas-body {
                 @include respond(992px) {
-                    margin-top: 2rem;
-                }
-            }
+                    display: inline-block;
 
-            &.offcanvas-start {
-                @include respond(500px) {
-                    width: 250px;
                 }
 
-            }
-
-            .offcanvas-header {
-                .btn-close {
-                    background-color: white;
-                    opacity: .9;
-                    padding: 0.45rem;
+                i {
+                    font-size: 3rem;
                 }
-
             }
-
         }
+
+
     }
 
 }

@@ -43,6 +43,10 @@ p {
   overflow-wrap: break-word;
 }
 
+a {
+  color: currentColor;
+}
+
 p.huge {
   font-size: 2rem;
 }
@@ -137,62 +141,73 @@ section {
 .header .navbar {
   font-size: 1.8rem;
   font-family: inherit;
-  padding: 4rem 0;
 }
 
-.header .navbar .nav-item {
-  align-self: center;
+.header .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header .navbar .nav-item:not(:last-child) {
-  margin-right: 3rem;
+.header .navbar .container .navbar-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
-.header .navbar .nav-item .nav-link {
-  color: white;
+.header .navbar .container .navbar-nav.show {
+  left: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .header .navbar .container .navbar-nav {
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    left: -40%;
+    width: 40%;
+    height: max-content;
+    background-color: #5b5549;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    z-index: 2;
+  }
+}
+.header .navbar .container .navbar-nav .nav-item {
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .header .navbar .container .navbar-nav .nav-item {
+    margin: 2rem 0;
+  }
+}
+.header .navbar .container .navbar-nav .nav-item .nav-link {
   text-decoration: none;
-  cursor: pointer;
+  color: white;
   transition: all 0.25s;
 }
 
-@media only screen and (max-width: 992px) {
-  .header .navbar .nav-item .nav-link {
-    font-size: 2rem;
-  }
-}
-.header .navbar .nav-item .nav-link:hover {
+.header .navbar .container .navbar-nav .nav-item .nav-link:hover {
   color: rgba(255, 255, 255, 0.55);
 }
 
-@media only screen and (max-width: 991px) {
-  .header .navbar .nav-item {
-    align-self: stretch;
-  }
-}
-.header .navbar .navbar-toggler {
-  font-size: 1.7rem;
+.header .navbar .container .nav-toggle {
+  display: none;
 }
 
 @media only screen and (max-width: 992px) {
-  .header .navbar .offcanvas {
-    padding: 3rem 2rem;
-    background-color: var(--bs-dark);
+  .header .navbar .container .nav-toggle {
+    display: inline-block;
   }
 }
-@media only screen and (max-width: 992px) {
-  .header .navbar .offcanvas .offcanvas-body {
-    margin-top: 2rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .header .navbar .offcanvas.offcanvas-start {
-    width: 250px;
-  }
-}
-.header .navbar .offcanvas .offcanvas-header .btn-close {
-  background-color: white;
-  opacity: 0.9;
-  padding: 0.45rem;
+.header .navbar .container .nav-toggle i {
+  font-size: 3rem;
 }
 
 .hero {
@@ -617,17 +632,6 @@ section {
   opacity: 60%;
 }
 
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
