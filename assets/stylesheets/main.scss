@@ -50,7 +50,8 @@ p {
     overflow-wrap: break-word;
 }
 
-a {
+a,
+a:hover {
     color: currentColor;
 }
 
