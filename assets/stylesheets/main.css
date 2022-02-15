@@ -174,22 +174,22 @@ section {
 }
 
 @media only screen and (max-width: 992px) {
-  .header .navbar #offcanvasNavbar.offcanvas {
+  .header .navbar .offcanvas {
     padding: 3rem 2rem;
     background-color: var(--bs-dark);
   }
 }
 @media only screen and (max-width: 992px) {
-  .header .navbar #offcanvasNavbar.offcanvas .offcanvas-body {
+  .header .navbar .offcanvas .offcanvas-body {
     margin-top: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
-  .header .navbar #offcanvasNavbar.offcanvas.offcanvas-start {
+  .header .navbar .offcanvas.offcanvas-start {
     width: 250px;
   }
 }
-.header .navbar #offcanvasNavbar.offcanvas .offcanvas-header .btn-close {
+.header .navbar .offcanvas .offcanvas-header .btn-close {
   background-color: white;
   opacity: 0.9;
   padding: 0.45rem;
@@ -617,42 +617,6 @@ section {
   opacity: 60%;
 }
 
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */

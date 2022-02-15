@@ -174,7 +174,7 @@ section {
             font-size: 1.7rem;
         }
 
-        #offcanvasNavbar.offcanvas {
+        .offcanvas {
             @include respond(992px) {
                 padding: 3rem 2rem;
                 background-color: var(--bs-dark);
