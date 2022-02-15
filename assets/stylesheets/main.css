@@ -86,6 +86,9 @@ section {
     padding: 0 4%;
   }
 }
+.invisible{
+visibility: hidden !important;
+}
 .logo-box {
   display: flex;
   justify-content: center;
