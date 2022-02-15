@@ -89,6 +89,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .logo-box .logo-img {
@@ -135,7 +136,7 @@ section {
 }
 
 .header {
-  padding: 2%;
+  padding: 3% 4%;
 }
 
 .header .navbar {
@@ -168,7 +169,7 @@ section {
   .header .navbar .container .navbar-nav {
     flex-direction: column;
     position: fixed;
-    top: 10%;
+    top: 13%;
     left: -40%;
     width: 40%;
     height: max-content;
@@ -199,6 +200,7 @@ section {
 
 .header .navbar .container .nav-toggle {
   display: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 992px) {
@@ -632,6 +634,8 @@ section {
   opacity: 60%;
 }
 
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */

@@ -92,6 +92,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 
     .logo-img {
         width: 6rem;
@@ -138,7 +139,7 @@ section {
 
 // header
 .header {
-    padding: 2%;
+    padding: 3% 4%;
 
     .navbar {
         font-size: 1.8rem;
@@ -168,7 +169,7 @@ section {
                 @include respond(992px) {
                     flex-direction: column;
                     position: fixed;
-                    top: 10%;
+                    top: 13%;
                     left: -40%;
                     width: 40%;
                     height: max-content;
@@ -200,10 +201,10 @@ section {
 
             .nav-toggle {
                 display: none;
+                cursor: pointer;
 
                 @include respond(992px) {
                     display: inline-block;
-
                 }
 
                 i {
