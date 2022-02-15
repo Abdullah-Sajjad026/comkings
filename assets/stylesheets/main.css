@@ -136,7 +136,7 @@ section {
 }
 
 .header {
-  padding: 3% 4%;
+  padding: 3% 0;
 }
 
 .header .navbar {
@@ -634,7 +634,6 @@ section {
   opacity: 60%;
 }
 
-/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
