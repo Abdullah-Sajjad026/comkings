@@ -30,7 +30,7 @@
     <div class="hero">
 
         <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <!-- <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
                     <div class="logo-box">
                         <img src="./assets/images/logo.png" alt="logo" class="logo-img">
@@ -58,7 +58,48 @@
                         </ul>
                     </div>
                 </div>
+            </nav> -->
+
+            <nav class="navbar navbar-dark bg-transparent navbar-expand-lg">
+                <div class="container">
+                    <div class="logo-box">
+                        <img src="./assets/images/logo.png" alt="logo" class="logo-img">
+                        <span class="logo-text">ComKings</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <div class="logo-box">
+                                <img src="./assets/images/logo.png" alt="logo" class="logo-img">
+                                <span class="logo-text">ComKings</span>
+                            </div>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a href="#cards" class='nav-link'>Cards</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#upgrades" class='nav-link'>Upgrades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#founders" class='nav-link'>Founders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#roadmap" class='nav-link'>Roadmap</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
+
         </header>
 
         <div class="hero-content mycontainer">

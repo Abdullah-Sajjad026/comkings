@@ -155,9 +155,33 @@ section {
                 align-self: stretch;
             }
         }
-    }
-}
 
+        .navbar-toggler {
+            font-size: 1.7rem;
+        }
+
+        #offcanvasNavbar.offcanvas {
+            @include respond(992px) {
+                padding: 3rem 2rem;
+                background-color: var(--bs-purple);
+            }
+
+            .offcanvas-body {
+                @include respond(992px) {
+                    margin-top: 2rem;
+                }
+            }
+
+            &.offcanvas-end {
+                @include respond(500px) {
+                    width: 280px;
+                }
+
+            }
+        }
+    }
+
+}
 
 .hero {
     min-height: 90vh;

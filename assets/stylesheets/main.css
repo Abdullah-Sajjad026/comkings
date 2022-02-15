@@ -144,6 +144,25 @@ section {
     align-self: stretch;
   }
 }
+.header .navbar .navbar-toggler {
+  font-size: 1.7rem;
+}
+@media only screen and (max-width: 992px) {
+  .header .navbar #offcanvasNavbar.offcanvas {
+    padding: 3rem 2rem;
+    background-color: var(--bs-purple);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header .navbar #offcanvasNavbar.offcanvas .offcanvas-body {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header .navbar #offcanvasNavbar.offcanvas.offcanvas-end {
+    width: 280px;
+  }
+}
 
 .hero {
   min-height: 90vh;
