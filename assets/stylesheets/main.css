@@ -184,7 +184,7 @@ section {
 
 @media only screen and (max-width: 950px) {
   .hero-text-col {
-    padding: 8rem 0;
+    padding: 4rem 0 5rem 0;
   }
 }
 .hero-text-col .hero-title {
