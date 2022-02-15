@@ -483,8 +483,8 @@ section {
 }
 
 .section-roadmap .roadmap-card {
-  position: relative;
-  display: flex;
+ display: grid;
+    grid-template-columns: 9rem 3fr;
 }
 
 .section-roadmap .roadmap-card .icon-div {
